@@ -1,0 +1,16 @@
+drop database if exists deporte;
+create database deporte;
+use deporte;
+ 
+create table usuarios(
+correo varchar(60) not null primary key,
+nombre varchar(30) not null,
+apellido varchar(30) not null,
+edad int not null,
+deporte varchar(30) not null,
+contrasena varchar(30) not null
+)engine=innodb;
+
+
+insert into usuarios values ("alejo@test.com","Alejandro","Perez","22","Futbol","1234");
+insert into usuarios values ("norbey@test.com","Norbey","Alzate","17","Basquetbol","12345");
